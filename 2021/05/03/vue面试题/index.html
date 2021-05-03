@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 廖东生">
+    <meta name="keywords" content="廖东生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 廖东生</title>
+    <title>廖东生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-04
+                    2021-05-03
                 </div>
                 
 
@@ -464,19 +464,67 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">title: friends</span><br><span class="line">date: 2018-12-12 21:25:30</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h5 id="1-说一下vue生命周期"><a href="#1-说一下vue生命周期" class="headerlink" title="1.说一下vue生命周期"></a>1.说一下vue生命周期</h5><h5 id="2-vue-cli里面的文件都有什么，有什么用处"><a href="#2-vue-cli里面的文件都有什么，有什么用处" class="headerlink" title="2.vue-cli里面的文件都有什么，有什么用处"></a>2.vue-cli里面的文件都有什么，有什么用处</h5><h5 id="3-route和-router有什么区别"><a href="#3-route和-router有什么区别" class="headerlink" title="3.$route和$router有什么区别"></a>3.$route和$router有什么区别</h5><p>$route 是“路由信息对象”，包括name，path，params，hash，query，fullpath，mathed，name等路由信息。</p>
+<p>$router是“路由实例”对象，包括了路由跳转方法，钩子函数。</p>
+<h5 id="4-v-if和v-show区别"><a href="#4-v-if和v-show区别" class="headerlink" title="4.v-if和v-show区别"></a>4.v-if和v-show区别</h5><p>v-if是真正的条件渲染，因为它会确保切换过程中条件块中的事件监听器和子组件适当的销毁和重建。</p>
+<p>v-if也是惰性的。只有第一次渲染条件为真的时候，才会开始渲染条件块。</p>
+<p>v-show不管初始条件是什么，元素总是会被渲染出来。并且只是通过修改display：none；来进行切换。</p>
+<h5 id="5-vue里面的key有什么作用"><a href="#5-vue里面的key有什么作用" class="headerlink" title="5.vue里面的key有什么作用"></a>5.vue里面的key有什么作用</h5><p>key值用来管理可复用的元素，因为vue会尽可能高效地去渲染元素。通常会复用已有元素，而不是从头开始渲染。</p>
+<p>在没有key值的时候，diff算法是会把c改变f。而有key的时候，diff算法会正确识别出位置，进行修改。</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1617204918698.png" alt="1617204918698"></p>
+<h5 id="6-vue里的组件通信都有那些"><a href="#6-vue里的组件通信都有那些" class="headerlink" title="6.vue里的组件通信都有那些"></a>6.vue里的组件通信都有那些</h5><h5 id="7-为什么data中加入一个对象属性，视图没有更新。该如何解决。"><a href="#7-为什么data中加入一个对象属性，视图没有更新。该如何解决。" class="headerlink" title="7.为什么data中加入一个对象属性，视图没有更新。该如何解决。"></a>7.为什么data中加入一个对象属性，视图没有更新。该如何解决。</h5><p>视图没有马上更新，是因为vue.defineProperty()的限制。</p>
+<p>可以使用this.$set(你要改变的数组/对象，你要改变的位置/key，你要改成什么value)</p>
+<h5 id="8-说说event-bus的原理"><a href="#8-说说event-bus的原理" class="headerlink" title="8.说说event-bus的原理"></a>8.说说event-bus的原理</h5><h5 id="9-讲一下this-nextTick的原理"><a href="#9-讲一下this-nextTick的原理" class="headerlink" title="9.讲一下this.$nextTick的原理"></a>9.讲一下this.$nextTick的原理</h5><p>主要运用了事件循环机制的原理</p>
+<p>我们平时会使用nextTick来保证当前视图渲染完成，是因为调用this.$nextTick放在了清空flushqueue watcher之前了</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619665001333.png" alt="1619665001333"></p>
+<p>vue是异步执行DOM更新的，一旦观察到数据变化，Vue就会开启一个队列，然后把同一事件循环当中观察到数据变化的watcher推送到这个队列，如果这个watcher被触发多次，只会被推送到队列一次。这种缓冲行为可以有效的去掉重复数据造成的不必要的计算和DOM更新。而在下一个事件循环中，vue会清除队列，并进行必要的DOM更新。当你设置新的值的时候，并不会马上更新DOM，而是在异步队列被清除，也就是下一个事件循环开始时执行更新时才会进行必要的DOM更新。如果你此时想去操作更新的DOM就会出现问题。为了在数据变化之后，等待Vue完成更新的DOM可以在数据变化之后立即使用Vue.nextTick()，这样回调函数在DOM更新完成后就会被调用。</p>
+<p>当数据更新了，在DOM中渲染后，自动执行该函数。</p>
+<h5 id="10-如何去使用过滤器"><a href="#10-如何去使用过滤器" class="headerlink" title="10.如何去使用过滤器"></a>10.如何去使用过滤器</h5><h5 id="11-vue两个核心是什么"><a href="#11-vue两个核心是什么" class="headerlink" title="11.vue两个核心是什么"></a>11.vue两个核心是什么</h5><p>数据驱动视图：viewmodel，保证视图和数据的一致性。</p>
+<p>组件系统：应用类ui可以看作全部是由组件树构成。</p>
+<h5 id="12-说一下vue是怎么监听键盘的"><a href="#12-说一下vue是怎么监听键盘的" class="headerlink" title="12.说一下vue是怎么监听键盘的"></a>12.说一下vue是怎么监听键盘的</h5><h5 id="13-computed和watch的区别"><a href="#13-computed和watch的区别" class="headerlink" title="13.computed和watch的区别"></a>13.computed和watch的区别</h5><p>computed：computed是计算属性，依赖于其他属性值。并且computed的值是有缓存，只有它依赖的属性值发生改变，下一次获取computed的值才有重新计算computed的值</p>
+<p>watch: 更多的是起到观察的作用。类似于某些数据的监听回调，每当监听数据变化时都会执行回调进行后续操作。</p>
+<p><strong>运用场景：</strong></p>
+<ul>
+<li>当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；</li>
+<li>当我们需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</li>
+</ul>
+<h5 id="14-vue如何进行数据双向绑定"><a href="#14-vue如何进行数据双向绑定" class="headerlink" title="14.vue如何进行数据双向绑定"></a>14.vue如何进行数据双向绑定</h5><p>initdata  =&gt;  observe =&gt; 会判断这个对象有没有被观察到  没有则会创建一个观察对象 new Observe 有那么就直接返回这个数据</p>
+<p>观测又分为两种 一种为对象 一种为数组</p>
+<p>this.walk(value) 重新定义对象类型数据</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619661220254.png" alt="1619661220254"></p>
+<p>当对象是同一个值的时候 就会调用递归观测，用户去调取值的时候，就会调用get方法，就会把当前的watcher收集到，当数据发生改变的时候 就会通知watcher去改变数据，这时候就会数据更新调用set方法重新设置值</p>
+<p>get：</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619661294625.png" alt="1619661294625"></p>
+<p>set：</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619661528152.png" alt="1619661528152"></p>
+<p>如果是数组的话 就是会对数组的方法重写</p>
+<p>将数组的原型链指向重写的数组方法中</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619661914827.png" alt="1619661914827"></p>
+<p>arrayMethods 就是改写数组原型的方法</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619661944391.png" alt="1619661944391"></p>
+<p>这些方法有</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619662036887.png" alt="1619662036887"></p>
+<h5 id="15-为何vue采用异步渲染"><a href="#15-为何vue采用异步渲染" class="headerlink" title="15.为何vue采用异步渲染"></a>15.为何vue采用异步渲染</h5><p>理解：因为如果不采用异步更新，那么每次更新数据都会对当前组件进行重新渲染，所以为了性能考虑。vue会在本轮数据更新后，再去异步更新视图</p>
+<p><strong>原理</strong></p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619663181942.png" alt="1619663181942"></p>
+<p>第一步：通知watcher进行更新操作</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619663445967.png" alt="1619663445967"></p>
+<p>第二步：调用watcher的update</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619663476466.png" alt="1619663476466"></p>
+<p>第三步：将watcher放入队列中</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619663559378.png" alt="1619663559378"></p>
+<p>第四步：异步清空watcher队列</p>
+<p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1619663667340.png" alt="1619663667340"></p>
+<p><code>备注</code></p>
+<p><strong>发布-订阅模式概念</strong></p>
+<p>发布-订阅模式又称为观察者模式，它定义的是一种一对多的依赖关系，当一个状态发生改变的时候，所有以来这个状态的对象都会得到通知。</p>
+<p><strong>生活中的发布-订阅模式：</strong></p>
+<p>上面事发布-订阅模式的一个比较正式的解释，可能这个解释不大好理解。所以我们通过实际生活中的例子来理解。</p>
+<p>比如看中了一套房子，等到去了售楼处的说以后才被告知房子已经售罄了。但是售楼小姐告知，将来会有尾盘推出。具体什么时候推出，目前没人知道。</p>
+<p>但是买家又不想频繁的跑，于是就把自己的电话号码登记在售楼处，在登记的花名册上有很多类似的买家。售楼小姐答应买家，新的房源一出来就一一通知买家。</p>
+<p>所以上面就是一个发布订阅模式的简单例子。购房者（订阅者）订阅房源信息，售楼处（发布者）发布新房源消息给购房者（订阅者），购房者（订阅者）接收到消息后作出相应的反应。</p>
 
                 
             </div>
@@ -503,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://YesbuterAA.github.io/2021/03/04/hello-world/">https://YesbuterAA.github.io/2021/03/04/hello-world/</a>
+                    <a href="https://YesbuterAA.github.io/2021/05/03/vue%E9%9D%A2%E8%AF%95%E9%A2%98/">https://YesbuterAA.github.io/2021/05/03/vue%E9%9D%A2%E8%AF%95%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -710,9 +758,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/05/03/vue%E9%9D%A2%E8%AF%95%E9%A2%98/">
                     <div class="card-image">
@@ -730,9 +779,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -741,6 +790,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -748,7 +798,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/03/04/hello-world/">
@@ -778,7 +828,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
