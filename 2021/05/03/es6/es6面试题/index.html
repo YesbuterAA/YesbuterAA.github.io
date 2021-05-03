@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 廖东生">
+    <meta name="keywords" content="廖东生">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 廖东生</title>
+    <title>廖东生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-04
+                    2021-05-03
                 </div>
                 
 
@@ -464,19 +464,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h5 id="1-讲述一下promise"><a href="#1-讲述一下promise" class="headerlink" title="1.讲述一下promise"></a>1.讲述一下promise</h5><p>传统异步调用方式是回调函数直接作为函数参数进行调用。</p>
+<h5 id="2-aysnc-await-有什么作用"><a href="#2-aysnc-await-有什么作用" class="headerlink" title="2.aysnc\await 有什么作用"></a>2.aysnc\await 有什么作用</h5><p>aysnc\await 是new  Promise().then()的语法糖</p>
+<h5 id="3-setTimeout和promise、aysnc-await-有什么区别"><a href="#3-setTimeout和promise、aysnc-await-有什么区别" class="headerlink" title="3. setTimeout和promise、aysnc\await 有什么区别"></a>3. setTimeout和promise、aysnc\await 有什么区别</h5><h5 id="4-为什么会有变量提升"><a href="#4-为什么会有变量提升" class="headerlink" title="4.为什么会有变量提升"></a>4.为什么会有变量提升</h5><p>大致的意思就是：由于第一代JS虚拟机中的抽象纰漏导致的，编译器将变量放到了栈槽内并编入索引，然后在（当前作用域的）入口处将变量名绑定到了栈槽内的变量。（注：这里提到的抽象是计算机术语，是对内部发生的更加复杂的事情的一种简化。）</p>
+<p>然后，Dmitry Soshnikov又提到了函数提升，他提到了相互递归（就是A函数内会调用到B函数，而B函数也会调用到A函数）：</p>
+<p> Brendan Eich很确定的说，函数提升就是为了解决相互递归的问题，大体上可以解决像ML语言这样自下而上的顺序问题。</p>
+<p> 最后，Brendan Eich还对变量提升和函数提升做了总结：</p>
+<p> 大概是说，变量提升是人为实现的问题，而函数提升在当初设计时是有目的的。 </p>
+<p>  上面有个段落说到的es6之后使用let和const不存在提升是不准确的，可参考： </p>
+<p>   <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6">https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6</a></p>
+<p>   大致意思是js中无论哪种形式声明(var, let, const, function, function*, class)都会存在提升现象，不同的是，  var,function,function*的声明会在提升时进行初始化赋值为 undefined，因此访问这些变量的时候，不会报 ReferenceError 异常，而使用 let,const,class 声明的变量，被提升后不会被初始化，这些变量所处的状态被称为“temporal dead zone”，此时如果访问这些变量会抛出ReferenceError 异常，看上去就像没被提升一样。</p>
+<h5 id="6-说一下es6的模块化"><a href="#6-说一下es6的模块化" class="headerlink" title="6.说一下es6的模块化"></a>6.说一下es6的模块化</h5><h5 id="7-set、map和weakset、weakmap-有什么的不同"><a href="#7-set、map和weakset、weakmap-有什么的不同" class="headerlink" title="7.set、map和weakset、weakmap 有什么的不同"></a>7.set、map和weakset、weakmap 有什么的不同</h5><h5 id="8-let，var，const的区别"><a href="#8-let，var，const的区别" class="headerlink" title="8.let，var，const的区别"></a>8.let，var，const的区别</h5><p>var：有变量提升，可以修改值，没有作用域链，可以重复定义</p>
+<p>let：没有变量提升，可以修改值，有作用域链，不可以重复定义</p>
+<p>const：没有变量提升，不可以修改值，有作用域链，不可以重复定义</p>
+<h5 id="9-普通函数和箭头函数的区别"><a href="#9-普通函数和箭头函数的区别" class="headerlink" title="9.普通函数和箭头函数的区别"></a>9.普通函数和箭头函数的区别</h5><p><img src="C:\Users\廖\AppData\Roaming\Typora\typora-user-images\1618461031035.png" alt="1618461031035"></p>
 
                 
             </div>
@@ -503,7 +504,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://YesbuterAA.github.io/2021/03/04/hello-world/">https://YesbuterAA.github.io/2021/03/04/hello-world/</a>
+                    <a href="https://YesbuterAA.github.io/2021/05/03/es6/es6%E9%9D%A2%E8%AF%95%E9%A2%98/">https://YesbuterAA.github.io/2021/05/03/es6/es6%E9%9D%A2%E8%AF%95%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -710,11 +711,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/05/03/js/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                <a href="/2021/05/03/es6/es6%E9%9D%A2%E8%AF%95%E9%A2%98/">
                     <div class="card-image">
                         
                         
@@ -730,45 +732,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            廖东生
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/03/04/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
                             </span>
                         <span class="publish-author">
                             
@@ -779,6 +744,43 @@
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/05/03/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            廖东生
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
